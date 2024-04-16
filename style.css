@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+:root{
+    --primary-text: rgba(17, 24, 39);
+    --text-color: rgba(75,85,99);
+    --second-text: rgb(88, 88, 88);
+    --strong-text: rgb(73, 72, 72);
+
+    --btn-text: #fff;
+    --btn-bg: #000;
+    --meeting-btn: #fff;
+    --meeting-btn-text: #000;
+
+    --primary-bg: #fff;
+    --secondary-bg: rgba(241,241,241);
+}
+
+[data-theme="dark"]{
+    --primary-bg: #000;
+    --secondary-bg: #0f0f0f;
+
+    --btn-text: #000;
+    --btn-bg: #fff;
+    --meeting-btn: rgba(75, 85, 99);
+    --meeting-btn-text: #fff;
+
+    --primary-text: rgba(243, 244, 246);
+    --text-color: rgba(75,85,99);
+    --second-text: rgba(209, 213, 219);
+    --strong-text: rgb(209, 213, 219);
+
+}
+
+body{
+    height: 110vh;
+    width: auto;
+    margin: 0 auto;
+    background-color: var(--secondary-bg);
+}
+
+.title-logo h3{
+    font-weight: bold;
+    color: var(--primary-text);
+}
+
+.title-logo h4{
+    font-weight: lighter;
+    color: var(--second-text);
+    padding: 0.6rem 0;
+}
+
+header{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    padding: 0 1.4rem;
+    font-family: 'Arial', sans-serif;
+    color: var(--second-text);
+    font-weight: 600;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+.socials{
+    color: var(--second-text);
+}
+.socials i{
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+.socials i:nth-child(5){
+    color: rgba(245,158,11);
+}
+
+
+
+main{
+    margin-top: 4rem;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Spacing for texts and size*/
+.column-first h1{
+    margin-bottom: 0.7rem;
+    color: var(--primary-text);
+    font-size: 2.3rem;
+}
+.column-first h2{
+    margin-bottom: 1.9rem;
+    color: var(--primary-text);
+}
+
+.column-first h3{
+    color: var(--second-text);
+    font-size: 1.4rem;
+}
+.column-first h3 strong{
+    color: var(--strong-text);
+    font-weight: 700;
+}
+
+.column-first h1, h2, h3{
+    font-weight: lighter;
+
+}
+
+/* button */
+
+.discord{
+    color: var(--btn-text);
+    background-color: var(--btn-bg);
+    padding: 0.7rem 1.5rem;
+    margin-top: 3rem;
+    letter-spacing: 0.8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.discord strong{
+    font-weight: 800;
+}
+
+.meeting{
+    color: var(--meeting-btn-text);
+    margin-left: 1rem;
+    background-color: var(--meeting-btn);
+    padding: 0.9rem 1.5rem;
+    margin-top: 3rem;
+    letter-spacing: 0.8px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+
+.meeting:hover{
+    background-color: #cccccc;
+    opacity: 0.6;
+}
+
+
+/* Second Column */
+/* Second Column */
+
+.column-second img {
+    border-radius: 40px;
+}
+
+.column-second .content {
+    margin-top: 10px; /* Adjust as needed */
+}
+.column-second span{
+    font-family: monospace;
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: var(--primary-text);
+}
+.column-second span strong{
+    font-family: monospace;
+}
+
+
+
+/* todo Second Container */
+.second-container{
+    background-color: var(--primary-bg);
+    margin-top: -10rem;
+}
+
+.recent-project-content{
+    max-width: 72rem;
+    margin: 0 auto;
+    color: var(--primary-text);
+}
+.recent-project-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding-top: 10rem;
+}
+
+.recent-project-header h1{
+    font-size: 8rem;
+    line-height: 1;
+    float: left;
+
+    margin-top: auto;
+    max-width: 32rem;
+}
+
+.recent-project-header a{
+    padding: 1rem 2rem;
+    background-color: var(--primary-text);
+    border-radius: .375rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.recent-project-header p{
+    margin-left: 1rem;
+}
